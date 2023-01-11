@@ -1,0 +1,137 @@
+@import url("https://fonts.google.com/specimen/Outfit");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  background-color: hsl(217deg, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(216deg, 50%, 16%);
+  width: 325px;
+  height: 480px;
+  text-align: center;
+  padding: 25px;
+  border-radius: 20px;
+}
+main div.equilibrium-div {
+  height: 277px;
+  width: 277px;
+  border-radius: 20px;
+}
+main div.equilibrium-div img.equilibrium-img {
+  width: 277px;
+  height: 277px;
+  border-radius: 20px;
+}
+main div.equilibrium-div img.view {
+  position: absolute;
+  right: 163px;
+  top: 170px;
+  display: none;
+}
+main div.equilibrium-div:hover {
+  background-color: rgba(0, 255, 247, 0.8);
+  cursor: pointer;
+}
+main div.equilibrium-div:hover img.equilibrium-img {
+  opacity: 0.5;
+}
+main div.equilibrium-div:hover img.view {
+  display: block;
+}
+main h1 {
+  font-size: 1rem;
+  color: hsl(0deg, 0%, 100%);
+  text-align: left;
+}
+main h1:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+main p {
+  font-size: 0.75rem;
+  color: hsl(215deg, 51%, 70%);
+  text-align: left;
+}
+main div.flex div.ethereum {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main div.flex div.ethereum img {
+  width: 12px;
+  height: 18px;
+}
+main div.flex div.ethereum p {
+  color: hsl(178deg, 100%, 50%);
+  margin-left: 10px;
+}
+main div.flex div.duration {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main div.flex div.duration img {
+  width: 12px;
+  height: 14px;
+}
+main div.flex div.duration p {
+  margin-left: 10px;
+}
+main .hr-line {
+  background-color: hsl(215deg, 32%, 27%);
+  height: 1px;
+}
+main .creator {
+  display: flex;
+  align-items: center;
+}
+main .creator img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid hsl(0deg, 0%, 100%);
+  display: inline-block;
+}
+main .creator p {
+  font-size: 0.75rem;
+  color: hsl(215deg, 51%, 70%);
+  margin-left: 20px;
+}
+main .creator p a {
+  text-decoration: none;
+  color: white;
+}
+main .creator p a:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  main {
+    width: max-content;
+    height: 540px;
+    padding-right: 17px;
+  }
+  div.equilibrium-div:hover img.view {
+    right: 660px;
+    top: 195px;
+  }
+}/*# sourceMappingURL=styles.css.map */
